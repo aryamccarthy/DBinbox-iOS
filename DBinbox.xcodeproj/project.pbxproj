@@ -12,9 +12,11 @@
 		425F33321D1D2481000B2BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425F33301D1D2481000B2BDB /* Main.storyboard */; };
 		425F33341D1D2481000B2BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425F33331D1D2481000B2BDB /* Assets.xcassets */; };
 		425F33371D1D2481000B2BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425F33351D1D2481000B2BDB /* LaunchScreen.storyboard */; };
+		B69E891A4E906176D419DAB5 /* Pods_DBinbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6EC867198C89B795F42CD8 /* Pods_DBinbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C8D409DBB79EDA2DDFF789A /* Pods-DBinbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBinbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBinbox/Pods-DBinbox.release.xcconfig"; sourceTree = "<group>"; };
 		425F33291D1D2481000B2BDB /* DBinbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBinbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425F332C1D1D2481000B2BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		425F332E1D1D2481000B2BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		425F33331D1D2481000B2BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425F33361D1D2481000B2BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		425F33381D1D2481000B2BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F401AC03BDC788D500D1D0 /* Pods-DBinbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBinbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBinbox/Pods-DBinbox.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6EC867198C89B795F42CD8 /* Pods_DBinbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBinbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69E891A4E906176D419DAB5 /* Pods_DBinbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25E3B6764DFB57BF23D3B237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EC867198C89B795F42CD8 /* Pods_DBinbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		425F33201D1D2481000B2BDB = {
 			isa = PBXGroup;
 			children = (
 				425F332B1D1D2481000B2BDB /* DBinbox */,
 				425F332A1D1D2481000B2BDB /* Products */,
+				6C107F1F464D40DE64A080B9 /* Pods */,
+				25E3B6764DFB57BF23D3B237 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = DBinbox;
 			sourceTree = "<group>";
 		};
+		6C107F1F464D40DE64A080B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90F401AC03BDC788D500D1D0 /* Pods-DBinbox.debug.xcconfig */,
+				2C8D409DBB79EDA2DDFF789A /* Pods-DBinbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 425F333B1D1D2481000B2BDB /* Build configuration list for PBXNativeTarget "DBinbox" */;
 			buildPhases = (
+				42BD26A132A489803B41CEFD /* [CP] Check Pods Manifest.lock */,
 				425F33251D1D2481000B2BDB /* Sources */,
 				425F33261D1D2481000B2BDB /* Frameworks */,
 				425F33271D1D2481000B2BDB /* Resources */,
+				C05951AB933390643F34C713 /* [CP] Embed Pods Frameworks */,
+				F83255BB08636EBC4A66FAF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42BD26A132A489803B41CEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C05951AB933390643F34C713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBinbox/Pods-DBinbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83255BB08636EBC4A66FAF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBinbox/Pods-DBinbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		425F33251D1D2481000B2BDB /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		425F333C1D1D2481000B2BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F401AC03BDC788D500D1D0 /* Pods-DBinbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBinbox/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		425F333D1D1D2481000B2BDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C8D409DBB79EDA2DDFF789A /* Pods-DBinbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBinbox/Info.plist;
@@ -288,6 +365,7 @@
 				425F333D1D1D2481000B2BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
